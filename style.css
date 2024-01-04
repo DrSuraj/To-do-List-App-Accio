@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #262626;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D0D0D;
+}
+
+header svg {
+    margin: 10px;
+}
+
+header h1 {
+    font-size: 47px;
+}
+
+
+/* Styling main section */
+
+main {
+    margin-top: 10px ;
+    width: 80vw;
+    min-width: 560px;
+}
+
+
+#task-form {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+#task-input {
+    padding: 15px;
+    color: white;
+    background-color: #0D0D0D;
+    border: none;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+#due-date-input,#search-input {
+    padding: 15px;
+    color: #808080;
+    background-color: #0D0D0D;
+    border: none;
+    border-radius: 8px;
+}
+
+#task-form button {
+    padding: 15px;
+    background-color: #1E6F9F;
+    color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+}
+
+#priority-container {
+    padding: 15px;
+    color: #808080;
+    background-color: #0D0D0D;
+    border: none;
+    border-radius: 8px;
+}
+
+#task-form select {
+    color: #b1afaf;
+    background-color: #0D0D0D;
+    border: none;
+    outline: none;
+}
+#filter{
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+
+/* task container styling */
+
+#task-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#task-container>div {
+
+    border-bottom: 1px solid gray;
+}
+#todo,#started,#completed{
+    width: 80%;
+}
+.to-do-head,
+.started-head,
+.completed-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    color: #4EA8DE;
+}
+
+#task-container span {
+    background-color: rgba(128, 128, 128, 0.512);
+    color: #D9D9D9;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+#empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+}
+
+/* styling task card */
+
+.task-item {
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+}
+.task-item>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttons button {
+    padding: 5px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    margin-inline: 5px;
+}
+
+.drop-text{
+    text-align: center;
+    padding: 15px;
+    color: gray;
+}
