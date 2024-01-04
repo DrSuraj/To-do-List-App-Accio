@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://play-lh.googleusercontent.com/VPqK75BwKMtTDFF6UQS6E3GYdYqzvZfddDxoKRH-DSlXIcYLN_EeSy5OXKx0bhBTtLUU"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="logo">
+      <img src="assets/Logo.png" alt="logo" />
+    </div>
+
+    <div>
+      <form id="info">
+        <input
+          class="inp"
+          id="form_input1"
+          type="text"
+          placeholder="Enter Your To-do List Task"
+          required
+        />
+        <input class="inp" id="form_input2" type="date" required />
+        <select class="inp" id="selection" required>
+          <option value="" disabled selected>Choose Priority</option>
+
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+
+          <option value="Low">Low</option>
+        </select>
+        <button class="inp" id="submission_btn">Add <img src="assets/plus.png" alt="plus" /> </button>
+      </form>
+    </div>
+
+    <div id="tasks_container">
+      <div id="heading_filter">
+        <h3 style="color: #4ea8de">
+          To-do list <br/><span id="cnt_all" class="spanny">0 of 0</span>
+        </h3>
+
+        <div id="count">
+          <h3 style="color: #8284fa">
+            Low Priority <br/><span id="cnt_low" class="spanny">0 of 0</span>
+          </h3>
+          <h3 style="color: #8284fa">
+            Medium Priority <br/><span id="cnt_medium" class="spanny">0 of 0</span>
+          </h3>
+          <h3 style="color: #8284fa">
+            High Priority <br/><span id="cnt_high" class="spanny">0 of 0</span>
+          </h3>
+        </div>
+
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="HIGH">High Priority</option>
+          <option value="MEDIUM">Medium Priority</option>
+          <option value="LOW">Low Priority</option>
+        </select>
+      </div>
+
+      <div id="tasks_items">
+        <!--cards-->
+      </div>
+
+      <div id="started">
+        <h2 style="color: #1e6f9f">
+          Started <span id="started_track" class="spanny">0</span>
+        </h2>
+      </div>
+
+      <div id="completed">
+        <h2 style="color: #1e6f9f">
+          Completed <span id="complete_track" class="spanny">0</span>
+        </h2>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
